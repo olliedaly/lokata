@@ -5,6 +5,8 @@
 Building a GNSS tracker that still knows where it is when the GPS signal dies.
 
 ## The Solution
+- Build Arduino project to send IMU + Magnetometer + GNSS data from T-Beam Supreme at highest rate possible via serial. **See src/main.cpp**
+- Record data over serial to csv on computer. **See analysis/capture.py**
 - Pedestrian Dead Reckoning (PDR): Uses the onboard 9-axis IMU to estimate position without GPS.
 - Method: Fuses sensor data (Madgwick filter) for direction and counts steps for distance.
 - Status: Work-in-progress hobby build. Expect some drift.
