@@ -14,14 +14,16 @@ Building a GNSS tracker that still knows where it is when the GPS signal dies.
 - Onboard GNSS (u-blox)
 - 9-Axis IMU (BMI270 + QMC6310)
 
-![alt text](image.png)
-accel drift. 
+## Current State
+![alt text](image-3.png)
 
-![alt text](image-1.png)
-increased step scale, invert heading
+Raw data
 
 ![alt text](image-2.png)
-currrent output
+
+Output
+
+**See analysis/ahrs.ipynb for more detail**
 
 ## Next Steps
 - Test on unseen walks.
