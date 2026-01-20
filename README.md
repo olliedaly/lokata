@@ -19,3 +19,10 @@ accel drift.
 
 ![alt text](image-1.png)
 increased step scale, invert heading
+
+![alt text](image-2.png)
+currrent output
+
+## Next Steps
+- Test on unseen walks.
+- Move calculation onto ESP32. There will be obvious performance considerations like sampling rate, datatypes, streaming live data not rolling windows that can 'see into the future'.
