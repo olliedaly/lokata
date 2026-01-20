@@ -27,6 +27,13 @@ Output
 
 **See analysis/ahrs.ipynb for more detail**
 
+## Challenges
+- IMU and Mag chips were mounted 90° apart; had to manually map axes (Ay=Gravity, Mx=Vertical) to unify the coordinate system.
+
+- Dead reckoning path was flipping East/West; fixed by inverting the Mz axis in the heading calculation.
+
+- Hard-iron bias from the 18650 battery; used "Figure 8" calibration at start to re-center the magnetic sphere.
+
 ## Next Steps
 - Test on unseen walks.
 - Move calculation onto ESP32. There will be obvious performance considerations like sampling rate, datatypes, streaming live data not rolling windows that can 'see into the future'.
