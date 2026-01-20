@@ -1,8 +1,9 @@
 # Lokata
 ### /ˈlʊkætə/
+https://github.com/olliedaly/lokata
 
 ## Project Goal
-Building a GNSS tracker that still knows where it is when the GPS signal dies.
+Develop a sensor-fused tracking system that implements Pedestrian Dead Reckoning (PDR) to bridge GNSS signal outages.
 
 ## The Solution
 - Build Arduino project to send IMU + Magnetometer + GNSS data from T-Beam Supreme at highest rate possible via serial. **See src/main.cpp**
