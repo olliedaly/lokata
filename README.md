@@ -30,3 +30,4 @@ Output
 ## Next Steps
 - Test on unseen walks.
 - Move calculation onto ESP32. There will be obvious performance considerations like sampling rate, datatypes, streaming live data not rolling windows that can 'see into the future'.
+- More concrete goal e.g. 30 seconds dead reckoning within 10m of actual location.
